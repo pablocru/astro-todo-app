@@ -1,0 +1,29 @@
+{
+  "name": "astro-todo-app",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@9.11.0+sha512.0a203ffaed5a3f63242cd064c8fb5892366c103e328079318f78062f24ea8c9d50bc6a47aa3567cabefd824d170e78fa2745ed1f16b132e16436146b7688f19b",
+  "engines": {
+    "node": "v20.17.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "eslint && astro check && astro dev",
+    "build": "eslint && astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "astro": "^4.15.11",
+    "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "eslint": "^9.12.0",
+    "eslint-plugin-astro": "^1.2.4",
+    "globals": "^15.10.0",
+    "typescript-eslint": "^8.8.0"
+  }
+}
