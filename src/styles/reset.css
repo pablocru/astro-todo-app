@@ -1,0 +1,39 @@
+:root {
+  /* Box sizes will include border and paddings */
+  box-sizing: border-box;
+
+  /* Font management */
+  /* Use Sans subfamily by default */
+  font-family: sans-serif;
+  font-synthesis: none;
+  font-size: 20px;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+/* Inherit box sizing to allow rollbacks on any specific section */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  /* Remove default margin */
+  margin: 0;
+}
+
+h1 {
+  /* To prevent font size reduction inside <article>, <section>, <aside> and <nav> */
+  font-size: 2em;
+}
+
+/* Use Serif subfamily on headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: serif;
+}
