@@ -1,0 +1,16 @@
+# Build output
+dist/
+
+# Generated types
+.astro/
+env.d.ts
+
+# Dependencies
+node_modules/
+
+# Logs
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.production
