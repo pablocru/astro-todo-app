@@ -1,9 +1,19 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import ToDoForm from "../components/ToDoForm.astro";
 
 const title = "Dashboard";
 ---
 
 <BaseLayout title={title}>
   <h1>{title}</h1>
+
+  <noscript>
+    <p class="alert alert--error">
+      This App will not work properly without JavaScript.
+      Please enable JavaScript in your browser.
+    </p>
+  </noscript>
+
+  <ToDoForm/>
 </BaseLayout>
