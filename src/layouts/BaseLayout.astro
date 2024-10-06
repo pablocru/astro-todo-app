@@ -1,0 +1,44 @@
+---
+import "../styles/reset.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  description =
+    "A simple task management app designed to deliver a smooth user experience.",
+  title,
+} = Astro.props;
+
+const titleSuffix = "Astro ToDo App";
+const finalTitle = title ? title + " - " + titleSuffix : titleSuffix;
+---
+
+<html lang="en">
+  <head>
+    {/* Character encoding */}
+    <meta charset="UTF-8">
+
+    {/* Consistent user experience across different mobile devices */}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {/* Primary SEO Tags */}
+    <title>{finalTitle}</title>
+    <meta name="title" content={finalTitle}/>
+    <meta name="description" content={description}/>
+    <meta name="author" content="Pablo Cru Delhom"/>
+    <link rel="canonical" href={Astro.url}/>
+
+    {/* Credit to Astro */}
+    <meta name="generator" content={Astro.generator}>
+
+    {/* Favicon */}
+    <link rel="icon" href={import.meta.env.BASE_URL + "/favicon.ico"}>
+  </head>
+
+  <body>
+    <slot/>
+  </body>
+</html>

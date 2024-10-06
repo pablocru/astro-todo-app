@@ -1,36 +1,12 @@
 ---
-import "../styles/reset.css";
-
-const title = "Astro ToDo App";
-const description =
-  "A simple task management app designed to deliver a smooth user experience.";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-  <head>
-    {/* Character encoding */}
-    <meta charset="UTF-8">
+<BaseLayout>
+  <h1>Astro ToDo App</h1>
 
-    {/* Consistent user experience across different mobile devices */}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    {/* Primary SEO Tags */}
-    <title>{title}</title>
-    <meta name="title" content={title} />
-    <meta name="description" content={description} />
-    <meta name="author" content="Pablo Cru Delhom" />
-    <link rel="canonical" href={Astro.url} />
-
-    {/* Credit to Astro */}
-    <meta name="generator" content={Astro.generator}>
-
-    {/* Favicon */}
-    <link rel="icon" href={import.meta.env.BASE_URL + "/favicon.ico"}>
-  </head>
-
-  <body>
-    <h1>{title}</h1>
-
-    <p>{description}</p>
-  </body>
-</html>
+  <p>
+    Discover this intuitive task management app,
+    crafted to provide you with a seamless and enjoyable experience!
+  </p>
+</BaseLayout>
