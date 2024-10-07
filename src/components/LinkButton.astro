@@ -19,6 +19,9 @@ const isOutsideLink = path.startsWith("https");
   }
 
   a {
+    /* Ensure link-button maintains its shape and doesn't word wrap on small sizes */
+    display: inline-block;
+
     /* Use the default text color as a background*/
     background-color: #333;
 
