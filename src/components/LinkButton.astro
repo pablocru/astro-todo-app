@@ -9,7 +9,7 @@ const isOutsideLink = path.startsWith("https");
 ---
 
 <a href={(isOutsideLink ? "" : import.meta.env.BASE_URL) + path}>
-  <slot/>
+  <slot />
 </a>
 
 <style>

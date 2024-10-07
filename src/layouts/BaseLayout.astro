@@ -9,8 +9,7 @@ interface Props {
 }
 
 const {
-  description =
-    "A simple task management app designed to deliver a smooth user experience.",
+  description = "A simple task management app designed to deliver a smooth user experience.",
   title,
 } = Astro.props;
 
@@ -21,28 +20,28 @@ const finalTitle = title ? title + " - " + titleSuffix : titleSuffix;
 <html lang="en">
   <head>
     {/* Character encoding */}
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
 
     {/* Consistent user experience across different mobile devices */}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {/* Primary SEO Tags */}
     <title>{finalTitle}</title>
-    <meta name="title" content={finalTitle}/>
-    <meta name="description" content={description}/>
-    <meta name="author" content="Pablo Cru Delhom"/>
-    <link rel="canonical" href={Astro.url}/>
+    <meta name="title" content={finalTitle} />
+    <meta name="description" content={description} />
+    <meta name="author" content="Pablo Cru Delhom" />
+    <link rel="canonical" href={Astro.url} />
 
     {/* Credit to Astro */}
-    <meta name="generator" content={Astro.generator}>
+    <meta name="generator" content={Astro.generator} />
 
     {/* Favicon */}
-    <link rel="icon" href={import.meta.env.BASE_URL + "/favicon.ico"}>
+    <link rel="icon" href={import.meta.env.BASE_URL + "/favicon.ico"} />
   </head>
 
   <body>
     <main>
-      <slot/>
+      <slot />
     </main>
   </body>
 </html>
