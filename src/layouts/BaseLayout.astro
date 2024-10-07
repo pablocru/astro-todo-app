@@ -1,5 +1,6 @@
 ---
 import "../styles/reset.css";
+import "../styles/layout.css";
 import "../styles/alert.css";
 
 interface Props {
@@ -40,6 +41,8 @@ const finalTitle = title ? title + " - " + titleSuffix : titleSuffix;
   </head>
 
   <body>
-    <slot/>
+    <main>
+      <slot/>
+    </main>
   </body>
 </html>

@@ -1,0 +1,8 @@
+main {
+  /* Limit the content width for better legibility on larger screens */
+  max-width: 75ch;
+  margin: auto;
+
+  /* Add padding to ensure space around the content on smaller screens */
+  padding: 1rem;
+}
