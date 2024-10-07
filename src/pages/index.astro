@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import LinkButton from "../components/LinkButton.astro";
 ---
 
 <BaseLayout>
@@ -10,5 +11,5 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     crafted to provide you with a seamless and enjoyable experience!
   </p>
 
-  <a href={import.meta.env.BASE_URL + "/dashboard"}>Start Managing Your Tasks</a>
+  <LinkButton path="/dashboard">Start Managing Your Tasks</LinkButton>
 </BaseLayout>
