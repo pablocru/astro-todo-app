@@ -5,6 +5,14 @@
   border-radius: 7px;
 }
 
+/* Each direct child will have the same margin inside the alert */
+.alert > * {
+  margin: 0 0 1rem;
+}
+.alert > *:last-child {
+  margin-bottom: 0;
+}
+
 .alert--error {
   border-color: #cc0000;
   background-color: rgba(255, 0, 0, 0.3);
